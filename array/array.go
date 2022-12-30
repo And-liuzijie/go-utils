@@ -83,3 +83,24 @@ func IntInArray(num int, data []int) bool {
 	}
 	return false
 }
+
+//数组平分 分片 分批
+func splitArray(arr []interface{}, num int64) [][]interface{} {
+	max := int64(len(arr))
+	if max < num {
+		return nil
+	}
+	var segmens = make([][]interface{}, 0)
+	quantity := max / num
+	end := int64(0)
+	for i := int64(1); i <= num; i++ {
+		qu := i * quantity
+		if i != num {
+			segmens = append(segmens, arr[i-1+end:qu])
+		} else {
+			segmens = append(segmens, arr[i-1+end:])
+		}
+		end = qu - i
+	}
+	return segmens
+}

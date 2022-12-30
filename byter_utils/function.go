@@ -20,6 +20,7 @@ import (
 	"code.byted.org/aurora/be_minipro_healthy/biz/util"
 	vcloud_sdk "code.byted.org/aurora/data_arch_common/vcloud-sdk"
 	"code.byted.org/aurora/h5info_rpc/kitex_gen/mom_and_baby"
+
 	"code.byted.org/aurora/h5info_rpc/src/config"
 	"code.byted.org/aurora/h5info_rpc/src/utils/bizerr"
 	"code.byted.org/gin/ginex"
@@ -717,4 +718,12 @@ func Transfer(num int) string {
 	}
 
 	return chinese
+}
+
+func Ptr(b bool) *bool {
+	return &b
+}
+
+func ptr(i interface{}) *interface{} {
+	return &i
 }

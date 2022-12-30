@@ -26,6 +26,7 @@ require (
 	code.byted.org/passport/session_lib v1.6.8
 	code.byted.org/security/go-spiffe-v2 v1.0.1 // indirect
 	code.byted.org/videoarch/alpha-go-sdk v0.1.15
+	github.com/360EntSecGroup-Skylar/excelize v1.4.1
 	github.com/EverythingMe/inbloom v0.0.0-20190617073926-1d67c94ae5dc // indirect
 	github.com/billmi/xorm-helper v0.0.0-20200506094339-c43550835278
 	github.com/choleraehyq/rwlock v0.0.12 // indirect
